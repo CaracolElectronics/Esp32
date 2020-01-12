@@ -1,10 +1,11 @@
 ///////////////////////////
 /// Caracol Electronics ///
-///                     ///
+///////////////////////////
 /// Ejemplo PWM con ESP32//
 ///////////////////////////
 
-const int ledGPIO = 18; // cualquier GPIO
+/* GPIO al cual iran asignados las señales PWM */
+const int ledGPIO = 18; 
 const int ledGPIO1 = 16;
 const int ledGPIO2 = 17;
 
@@ -14,7 +15,7 @@ const int canalPWM1 = 1;
 const int canalPWM2 = 2;// 0-15
 
 const int frecuencia = 10000; // en Hz
-const int resolucion = 8; // 0-255
+const int resolucion = 8; // 8-16 bits de resolución.
 /////////////////////////////////
 
 void setup() 
