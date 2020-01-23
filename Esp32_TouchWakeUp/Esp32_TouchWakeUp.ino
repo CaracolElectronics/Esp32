@@ -48,8 +48,8 @@ void print_porque_desperte()
 
   switch(wakeup_reason)
   {
-    case ESP_SLEEP_WAKEUP_EXT0 : Serial.println("Me desperte por una senal esterna usando RTC_IO"); break;
-    case ESP_SLEEP_WAKEUP_EXT1 : Serial.println("Me desperte por una senal esterna usando RTC_CNTL"); break;
+    case ESP_SLEEP_WAKEUP_EXT0 : Serial.println("Me desperte por una senal externa usando RTC_IO"); break;
+    case ESP_SLEEP_WAKEUP_EXT1 : Serial.println("Me desperte por una senal externa usando RTC_CNTL"); break;
     case ESP_SLEEP_WAKEUP_TIMER : Serial.println("Me desperte por el timer!"); break;
     case ESP_SLEEP_WAKEUP_TOUCHPAD : Serial.println("Me desperte por el touchpad"); break;   
   }
